@@ -15,6 +15,12 @@ const productSchema = mongoose.Schema({
   category: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'ProductCategory'
+  },
+  price_retail: {
+    type: Number
+  },
+  price: {
+    type: Number
   }
 })
 module.exports = mongoose.model(
