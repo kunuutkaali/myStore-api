@@ -5,5 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
+/* GET Test url */
+router.get('/test', (req, res, next)=>{
+  res.send('API Online')
+})
 module.exports = router;
